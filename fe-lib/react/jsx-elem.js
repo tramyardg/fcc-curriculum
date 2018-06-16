@@ -18,3 +18,12 @@ const JSXcomments = (
       <p>Here's a subtitle</p>
     </div>
 );
+
+// # React: Render HTML Elements to the DOM
+ReactDOM.render(
+    JSX,
+    document.getElementById('challenge-node')
+);
+
+// # React: Define an HTML Class in JSX
+
