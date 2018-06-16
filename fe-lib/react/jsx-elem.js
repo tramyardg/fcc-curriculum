@@ -20,16 +20,22 @@ const JSXcomments = (
 );
 
 // # React: Render HTML Elements to the DOM
-ReactDOM.render(
-    JSX,
-    document.getElementById('challenge-node')
-);
+ReactDOM.render(JSX, document.getElementById('challenge-node'));
 
 // # React: Define an HTML Class in JSX
 let className = 'myDiv';
 const JSXdiv = (
     <div className={className}>
       <h1>Add a class to this div</h1>
+    </div>
+);
+
+// # React: Learn About Self-Closing JSX Tags
+const JSXselfClosingTag = (
+    <div>
+      <h2>Welcome to React!</h2> <br />
+      <p>Be sure to close all tags!</p>
+      <hr />
     </div>
 );
 
