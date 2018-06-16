@@ -26,4 +26,12 @@ ReactDOM.render(
 );
 
 // # React: Define an HTML Class in JSX
+let className = 'myDiv';
+const JSXdiv = (
+    <div className={className}>
+      <h1>Add a class to this div</h1>
+    </div>
+);
+
+
 
