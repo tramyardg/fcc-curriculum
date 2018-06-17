@@ -46,3 +46,12 @@ const MyComponent = function() {
   );
 };
 
+// # React: Create a React Component (ES6 class syntax)
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (<div><h1>Hello React!</h1></div>);
+  }
+};
