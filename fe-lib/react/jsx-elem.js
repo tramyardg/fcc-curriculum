@@ -39,5 +39,10 @@ const JSXselfClosingTag = (
     </div>
 );
 
-
+// # React: A Stateless Functional Component
+const MyComponent = function() {
+  return (
+      <div>Hello!</div>
+  );
+};
 
