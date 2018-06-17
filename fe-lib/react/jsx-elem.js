@@ -40,9 +40,17 @@ const JSXselfClosingTag = (
 );
 
 // # React: A Stateless Functional Component
-const MyComponent = function() {
+const MyComponent = function () {
   return (
       <div>Hello!</div>
+  );
+};
+
+const MyComponent2 = () => {
+  return (
+      <div>
+        <p>I am the child</p>
+      </div>
   );
 };
 
@@ -51,7 +59,32 @@ class MyComponent extends React.Component {
   constructor(props) {
     super(props);
   }
+
   render() {
     return (<div><h1>Hello React!</h1></div>);
   }
+}
+
+// # React: Create a Component with Composition
+const ChildComponent = () => {
+  return (
+      <div>
+        <p>I am the child</p>
+      </div>
+  );
 };
+
+class ParentComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+        <div>
+          <h1>I am the parent</h1>
+          <ChildComponent />
+        </div>
+    );
+  }
+}
