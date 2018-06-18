@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 
 const NonCitrus = () => {
   return (
@@ -75,3 +76,8 @@ class TypesOfFood extends Component {
     );
   }
 }
+
+ReactDOM.render(
+    <TypesOfFood/>,
+    document.getElementById('challenge-node')
+);
