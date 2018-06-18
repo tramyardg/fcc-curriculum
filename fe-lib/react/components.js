@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-// # React: Use React to Render Nested Components
-const TypesOfFruit = () => {
+const NonCitrus = () => {
   return (
       <div>
-        <h2>Fruits:</h2>
+        <h3>Non-Citrus:</h3>
         <ul>
           <li>Apples</li>
           <li>Blueberries</li>
@@ -15,13 +14,51 @@ const TypesOfFruit = () => {
   );
 };
 
+const Citrus = () => {
+  return (
+      <div>
+        <h3>Citrus:</h3>
+        <ul>
+          <li>Lemon</li>
+          <li>Lime</li>
+          <li>Orange</li>
+          <li>Grapefruit</li>
+        </ul>
+      </div>
+  );
+};
+
+const TypesOfFruit = () => {
+  return (
+      <div>
+        <NonCitrus/>
+        <Citrus/>
+      </div>
+  );
+};
+
 const Fruits = () => {
   return (
       <div>
+        <h2>Fruits:</h2>
         <TypesOfFruit/>
       </div>
   );
 };
+
+const Vegetables = () => {
+  return (
+      <div>
+        <h2>Vegetables:</h2>
+        <ul>
+          <li>Brussel Sprouts</li>
+          <li>Broccoli</li>
+          <li>Squash</li>
+        </ul>
+      </div>
+  );
+};
+
 
 class TypesOfFood extends Component {
   constructor(props) {
@@ -33,6 +70,7 @@ class TypesOfFood extends Component {
         <div>
           <h1>Types of Food:</h1>
           <Fruits/>
+          <Vegetables/>
         </div>
     );
   }
