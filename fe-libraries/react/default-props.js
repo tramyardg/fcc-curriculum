@@ -13,7 +13,7 @@ ShoppingCart.defaultProps = {
   items: 0
 };
 
-// Override default props example
+// # Override default props example
 const Items = (props) => {
   return <h1>Current quantity: {props.qty}</h1>
 };
