@@ -1,4 +1,5 @@
-import React from 'react';
+  import React from 'react';
+import PropTypes from 'prop-types';
 
 const ShoppingCart = (props) => {
   return (
@@ -19,6 +20,10 @@ const Items = (props) => {
 
 Items.defaultsProps = {
   qty: 0
+};
+
+Items.propTypes = {
+  quantity: PropTypes.number.isRequired
 };
 
 class MyShoppingCart extends Component {
