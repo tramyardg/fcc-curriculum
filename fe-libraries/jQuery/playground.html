@@ -16,8 +16,17 @@
 <body>
 <script>
     $(document).ready(function () {
-      $(".well").addClass("animated shake");
-      $("#target3").addClass("animated fadeOut");
+      $('button').addClass('animated');
+      //$('.btn').addClass('shake');
+      $('#target1').addClass('btn-primary');
+      // Use appendTo to Move Elements with jQuery
+      $('#target2').appendTo('#right-well');
+      // Clone an Element Using jQuery
+      $('#target5').clone().appendTo('#left-well');
+      $("#right-well").children().css("color", "orange");
+      $(".target:nth-child(2)").addClass("animated bounce");
+      $(".target:even").addClass("animated shake");
+      $("body").addClass("animated hinge");
     });
 </script>
 <div class="container-fluid">
