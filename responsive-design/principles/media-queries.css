@@ -1,0 +1,16 @@
+/* media query that returns the content when the device's width is less than or equal to 100px: */
+@media (max-width: 100px) {
+    
+}
+
+/* media query returns the content when the device's height is more than or equal to 350px: */
+@media (min-height: 350px) {
+
+}
+
+/* media query, so that the p tag has a font-size of 10px when the device's height is less than or equal to 800px */
+@media (max-height: 800px) {
+    p {
+        font-size: 10px;
+    }
+}
