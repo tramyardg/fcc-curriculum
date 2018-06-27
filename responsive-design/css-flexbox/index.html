@@ -24,7 +24,7 @@
         width: 100%;
         height: 100%;
     }
-
+    /*----------------------------*/
     #box {
         height: 250px;
         display: flex;
@@ -50,6 +50,24 @@
         width: 100%;
         height: 100%;
     }
+    /*----------------------------*/
+    #box-new {
+        background: gray;
+        display: flex;
+        height: 500px;
+        /**/
+        justify-content: center;
+    }
+    #box-new-1 {
+        background-color: dodgerblue;
+        width: 25%;
+        height: 100%;
+    }
+    #box-new-2 {
+        background-color: orangered;
+        width: 25%;
+        height: 100%;
+    }
 </style>
 </head>
 <body>
@@ -59,11 +77,26 @@
     <div id="right-box"></div>
 </div>
 
+<h1>Diplay flex with 4 divs
 <div id="box">
     <div id="box-1"></div>
     <div id="box-2"></div>
     <div id="box-3"></div>
     <div id="box-4"></div>
+</div>
+
+<div>
+    <h1>Align Elements Using the justify-content Property</h1>
+    <code>justify-content: center;</code>
+    <p>Other options:</p>
+    <code>flex-start;</code>
+    <code>flex-end;</code>
+    <code>space-between;</code>
+    <code>space-around;</code>
+</div>
+<div id="box-new">
+    <div id="box-new-1"></div>
+    <div id="box-new-2"></div>
 </div>
 
 </body>
