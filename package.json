@@ -17,8 +17,9 @@
   "author": "Raymart De Guzman <raymart54@gmail.com>",
   "private": false,
   "scripts": {},
-  "dependencies": {
-    "chai": "^4.1.2"
-  },
-  "devDependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
 }
