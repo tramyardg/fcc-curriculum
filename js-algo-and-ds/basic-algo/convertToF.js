@@ -1,8 +1,11 @@
-const ConvertCelcius2Farenheit = {
-  calculate(celcius)
+const ConvertCelsiusToFahrenheit = {
+  calculate(celsius)
   {
-    return celcius * 9/5 + 32;
+    return celsius * 9 / 5 + 32;
   }
 };
 
-ConvertCelcius2Farenheit.calculate(32);
+ConvertCelsiusToFahrenheit.calculate(32);
+
+// converting celsius to Fahrenheit
+// fahrenheit = celsius * 9 / 5 + 32;

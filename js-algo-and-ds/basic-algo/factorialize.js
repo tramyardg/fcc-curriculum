@@ -5,5 +5,12 @@ function factorialize(num) {
     return num * factorialize(num - 1); // recursion
   }
 }
-// 5! = 1 * 2 * 3 * 4 * 5 = 120
+
 factorialize(5);
+
+// 5! = 1 * 2 * 3 * 4 * 5 = 120
+// 5 * factorial (4) = 120
+//  4 * factorial (3) = 24
+//   3 * factorial (2) = 6
+//    2 * factorial (1) = 2
+//     1
