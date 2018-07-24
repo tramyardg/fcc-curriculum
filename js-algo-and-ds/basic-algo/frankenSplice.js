@@ -5,6 +5,9 @@
 // slice
 // the original array is conserved
 // i.e., let arr2 = [4,5]; arr2.slice(1) => [5]; console.log(arr2); => [4,5]
+
+// concat empty array [] with nonempty array => nonempty array
+// i.e., [4,5].concat([]); => [4,5]
 function frankenSplice(arr1, arr2, n) {
   let emptyArr = [];
   let tempArr = arr2.concat(emptyArr);
