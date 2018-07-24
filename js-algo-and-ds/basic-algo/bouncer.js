@@ -8,6 +8,7 @@ function bouncer2(arr) {
   // https://forum.freecodecamp.org/t/javascript-array-prototype-filter/14289
   return arr.filter(
       function (value) {
+        // "" is invalid and (NaN and 0 are considered number)
         return (typeof value === 'string' && value.length > 0) || (typeof value === 'number' && value > 0);
       }
   );
